@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.js"],"names":["hey","console","log"],"mappings":"AAAA,CAAC,SAASA,GAAT,GAAgB;AACbC,EAAAA,OAAO,CAACC,GAAR,CAAY,KAAZ;AACH,CAFA,EAAD","file":"src.e31bb0bc.js","sourceRoot":"..\\src","sourcesContent":["!function hey () {\r\n    console.log('hey')\r\n}()"]}
