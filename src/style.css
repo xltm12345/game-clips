@@ -6,3 +6,6 @@
 .youtube-dimensions > iframe {
     position: absolute;
 }
+.maxwidth530 {
+    max-width: 530px;
+}
