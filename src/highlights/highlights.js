@@ -15,6 +15,12 @@ const highlights = [
     }
 ]
 
+var lootmontage = highlights.find(function (highlight) {
+    if (highlight.title === 'Loot Montage') {
+        return true
+    }
+})
+
 function createHighlight(highlight) {
     return `
         <h2 class="text-capitalize">
@@ -29,6 +35,7 @@ function createHighlight(highlight) {
 function insertHighlight(highlight){
     var section = document.createElement('section')
     section.classList.add("col-12","col-md-6", "col-xl-4")
+    
     section.innerHTML = createHighlight(highlight)
     highlightsElement.append(section)
 }
