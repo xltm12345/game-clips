@@ -2,38 +2,37 @@ var tipsElement = document.getElementById("tips")
 const tipsSections = [
     {
         title: "Apex",
+        subTitle: "apex facts",
         id: "apex-legends",
  
         tips:[
             {
-                description: "",
-                link: "https://www.youtube.com/embed/Uo94VVWVseY"
+                description: "apex moments with a friend ",
+                link: "https://www.youtube.com/watch?v=EjnnqF3fzwo&t=1s"
             },
-            {
-                description: "",
-                link: "https://www.youtube.com/embed/Uo94VVWVseY"
-            }
         ],
     },
     {
         title: "ROTMG",
+        subTitle: "rotmg facts",
         id: "rotmg",
         
         tips:[
             {
-                description: "",
+                description: "this is a knight PPE by myself ",
                 link: "https://www.youtube.com/embed/Uo94VVWVseY"
             }
         ],
     },
     {
         title: "Minecraft",
+        subTitle: "",
         id: "minecraft",
  
         tips:[
             {
-                description: "",
-                link: "https://www.youtube.com/embed/Uo94VVWVseY"
+                description: "just some minecraft random moments",
+                link: "https://www.youtube.com/watch?v=Csn45sKJlFg"
             }
         ],
     }
@@ -48,8 +47,13 @@ tipsSections.forEach(function(section) {
     h2Element.innerText = section.title
     h2Element.classList.add("text-capitalize","col-12","text-center","margin") 
 
-    sectionElement.append(h2Element)
+    var pElement = document.createElement('p')
+    pElement.innerText = section.subTitle
+    pElement.classList.add("text-capitalize","col-12","text-center","smallermargin","mt-0") 
 
+
+    sectionElement.append(h2Element)
+    sectionElement.append(pElement)
     var articleElement = document.createElement('article')
     articleElement.classList.add("col-12")
     
